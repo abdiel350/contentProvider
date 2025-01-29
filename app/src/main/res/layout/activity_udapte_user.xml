@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Título en la barra superior -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update User"
+        android:gravity="start|center_vertical"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Campo Login -->
+    <EditText
+        android:id="@+id/loginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:inputType="text" />
+
+    <!-- Campo Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/loginEditText"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <!-- Campo User Name -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:inputType="text" />
+
+    <!-- Botón UPDATE USER -->
+    <Button
+        android:id="@+id/useractualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="UPDATE USER"
+        android:background="#E0E0E0" />
+
+    <!-- Botón BACK -->
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="BACK"
+        android:background="#E0E0E0" />
+
+</RelativeLayout>

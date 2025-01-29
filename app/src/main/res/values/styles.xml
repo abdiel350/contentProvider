@@ -1,0 +1,5 @@
+<resources>
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- Color blanco para el texto -->
+    </style>
+    </resources>

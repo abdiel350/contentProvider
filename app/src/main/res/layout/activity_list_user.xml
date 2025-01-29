@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Título en la barra superior -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List users"
+        android:gravity="start|center_vertical"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- LinearLayout para los encabezados "User" y "E-MAIL" -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:weightSum="2">
+
+        <!-- Columna "User" -->
+        <TextView
+            android:id="@+id/userHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User"
+            android:textSize="16sp"
+            android:gravity="start" />
+
+        <!-- Columna "E-MAIL" -->
+        <TextView
+            android:id="@+id/emailHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="E-Mail"
+            android:textSize="16sp"
+            android:gravity="start" />
+    </LinearLayout>
+
+    <!-- RecyclerView para la tabla de usuarios -->
+
+    <!-- Botón BACK -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersrecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="BACK"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>

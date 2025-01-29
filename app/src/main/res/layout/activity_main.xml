@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        android:title="@string/app_name"
+        android:theme="@style/ToolbarStyle" />
+
+    <!-- Campo de texto para nombre de usuario -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:hint="User Name"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+
+        android:textSize="16sp" />
+
+    <!-- Campo de texto para contraseña -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:hint="Password"
+        android:layout_margin="16dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+
+        android:textSize="16sp" />
+
+    <!-- Botón LOGIN -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        android:text="LOGIN"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="CLOSE"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Menu" />
+</RelativeLayout>
