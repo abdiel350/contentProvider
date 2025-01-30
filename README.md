@@ -1,7 +1,8 @@
-Se modifica proyetco de sqlite y se agrega Content Providers con los requisitos solicitados.Codigo comentado y tambien se muestra el archivo UserProvider.kt y todos los archivos relacionados con el ContentProvider, tambien se puede ver el archivo 
-AndroidManifest.xml para ver la configuracion del Provider:
+Se ha modificado el proyecto SQLite para incluir un Content Provider, cumpliendo con los requisitos solicitados. El código ha sido comentado para mayor claridad.
+
+Además, se proporciona el archivo UserProvider.kt junto con todos los archivos relacionados con el ContentProvider. También se incluye el archivo AndroidManifest.xml, donde se puede verificar la configuración del proveedor:
 <provider
-android:name=".UserProvider"
-android:authorities="es.ua.eps.sqlite.provider"
-android:exported="true"
-android:grantUriPermissions="true"/>
+    android:name=".UserProvider"
+    android:authorities="es.ua.eps.sqlite.provider"
+    android:exported="true"
+    android:grantUriPermissions="true"/>
